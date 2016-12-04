@@ -13,6 +13,7 @@
   <% if signed_in? %>
   <li><%= link_to 'プロフィール', current_user %></li>
   <li><%= link_to 'ログアウト', signout_path, method: :delete %></li>
+  <li><%= link_to 'チャットルーム', chatroom_path %></li>
   <% else %>
   <li><%= link_to 'ログイン', signin_path %></li>
   <li><%= link_to 'アカウント作成', signup_path %></li>
