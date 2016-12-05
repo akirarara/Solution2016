@@ -7,6 +7,7 @@ App.room = App.cable.subscriptions.create "RoomChannel",
 
   received: (data) ->
     $('#messages').append data['message']
+    location.reload()
 
   speak: (message) ->
     @perform 'speak', message: message
